@@ -5,7 +5,7 @@ import { Grid } from "@mui/material";
 
 const Title = () => {
   return (
-    <Grid container sx={{ marginTop: 12, marginInline: 0, gap: 2, }}>
+    <Grid container justifyContent='center' marginY={12}>
       <ProfilePictureContainer />
       <HeroContent />
     </Grid>

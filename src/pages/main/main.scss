@@ -5,11 +5,13 @@
   background-repeat: no-repeat;
   overflow: visible;
   min-height: 100vh;
+  padding: 0;
 }
-@media only screen and (min-width: 564px) {
+
+@media only screen and (min-width: 92em) {
   .mainContainer {
     box-sizing: border-box;
-    padding: 0 8em;
+    padding: 0 12em;
     background-image: url("../../assets/bg.png");
     background-size: cover;
     background-repeat: no-repeat;
