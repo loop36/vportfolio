@@ -12,9 +12,9 @@ import {
   Toolbar,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import  { useState } from "react";
+import { useState } from "react";
 
-import VTLogo from "../../assets/logo/vt.svg";
+import VTLogo from "../../assets/logo/logo2.png";
 
 import "./NavigationMenu.scss";
 

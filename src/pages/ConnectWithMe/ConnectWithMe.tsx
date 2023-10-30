@@ -14,17 +14,17 @@ const ConnectWithMe = () => {
       <Typography variant="h2"> Connect With me</Typography>
       <Grid container className="link_container">
         <Grid item xs={3}>
-          <EmailOutlined />
+          <EmailOutlined fontSize="large" />
           <a href="mailto:vinutreesa21@gmail.com"> Feel Free to mail me</a>
         </Grid>
         <Grid item xs={3}>
-          <LinkedIn />
+          <LinkedIn fontSize="large" />
           <a href="mailto:vinutreesa21@gmail.com">
             Lets Connect in professional network
           </a>
         </Grid>
         <Grid item xs={3}>
-          <Twitter />
+          <Twitter fontSize="large" />
           <a href="mailto:vinutreesa21@gmail.com">
             Lets Connect in social place
           </a>
