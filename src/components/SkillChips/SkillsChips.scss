@@ -1,0 +1,15 @@
+.chip_title {
+  h3 {
+    font-size: larger;
+    margin-bottom: 20px;
+    border: solid grey 2px;
+
+    padding: 10px;
+    max-width: 300px;
+  }
+}
+.chip_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}

@@ -1,0 +1,15 @@
+.job_card_container {
+  max-width: 90vw;
+  font-size: 14px;
+  border-radius: 20px;
+  padding-block: 20px;
+  z-index: 2;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 72em) {
+    .job_card_container
+    {
+        max-width: 350px;
+    }
+}

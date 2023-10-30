@@ -7,7 +7,44 @@
   min-height: 100vh;
   padding: 0;
 }
+.experience_container {
+  position: relative;
+  width: auto;
+  background-color: #f2f2f2;
 
+  h1 {
+    position: absolute;
+    margin-top: -40px;
+    left: 3em;
+    font-size: 60px;
+  }
+}
+.skills_container {
+  position: relative;
+  width: auto;
+  background-color: #e5eeec;
+
+  h1 {
+    position: absolute;
+    margin-top: -40px;
+    left: 3em;
+    font-size: 60px;
+  }
+}
+.experience_container .data {
+  position: absolute;
+  bottom: -10px;
+  right: 3em;
+  img {
+    min-width: 300px;
+    max-width: 440px;
+  }
+}
+.skills_container .data {
+  position: absolute;
+  bottom: -10px;
+  right: 3em;
+}
 @media only screen and (min-width: 92em) {
   .mainContainer {
     box-sizing: border-box;
@@ -17,5 +54,35 @@
     background-repeat: no-repeat;
     overflow: visible;
     min-height: 100vh;
+  }
+
+  .experience_container {
+    background-color: #f2f2f2;
+    margin-top: 80px;
+    h1 {
+      position: absolute;
+
+      left: 3em;
+      font-size: 60px;
+    }
+  }
+  .experience_container .data {
+    position: absolute;
+    bottom: -10px;
+    right: 3em;
+    img {
+      min-width: 300px;
+      max-width: 440px;
+    }
+  }
+
+  .skills_container {
+    background-color: #E5EEEC;
+    padding: 0 12em;
+    h1 {
+      position: absolute;
+      left: 3em;
+      font-size: 60px;
+    }
   }
 }

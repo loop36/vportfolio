@@ -4,29 +4,33 @@ import {
   LinkedIn,
   Twitter,
 } from "@mui/icons-material";
-import {  Grid } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 
+import "./ConnectWithMe.scss";
 
 const ConnectWithMe = () => {
   return (
-    <Grid container>
-      <Grid item>
-        <EmailOutlined />
-        <a href="mailto:vinutreesa21@gmail.com"> vinutreesa21@gmail.com</a>
+    <Box className="connect_container">
+      <Typography variant="h2"> Connect With me</Typography>
+      <Grid container className="link_container">
+        <Grid item xs={3}>
+          <EmailOutlined />
+          <a href="mailto:vinutreesa21@gmail.com"> Feel Free to mail me</a>
+        </Grid>
+        <Grid item xs={3}>
+          <LinkedIn />
+          <a href="mailto:vinutreesa21@gmail.com">
+            Lets Connect in professional network
+          </a>
+        </Grid>
+        <Grid item xs={3}>
+          <Twitter />
+          <a href="mailto:vinutreesa21@gmail.com">
+            Lets Connect in social place
+          </a>
+        </Grid>
       </Grid>
-      <Grid item>
-        <Instagram />
-        <a href="mailto:vinutreesa21@gmail.com"> vinutreesa21@gmail.com</a>
-      </Grid>
-      <Grid item>
-        <LinkedIn />
-        <a href="mailto:vinutreesa21@gmail.com"> vinutreesa21@gmail.com</a>
-      </Grid>
-      <Grid item>
-        <Twitter />
-        <a href="mailto:vinutreesa21@gmail.com"> vinutreesa21@gmail.com</a>
-      </Grid>
-    </Grid>
+    </Box>
   );
 };
 

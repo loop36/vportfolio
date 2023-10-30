@@ -1,0 +1,15 @@
+.skill_chips_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  gap: 20px;
+}
+
+@media screen and (min-width: 72em) {
+  .skill_chips_container {
+    padding-top: 4em;
+    gap: 48px;
+  }
+}

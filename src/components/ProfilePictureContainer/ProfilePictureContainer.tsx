@@ -1,7 +1,7 @@
 
 import "./ProfilePicture.scss";
 import { Grid, Typography } from "@mui/material";
-import profile from "../../assets/profile.jpg";
+import profile from "../../assets/vineetha.jpg";
 
 const ProfilePictureContainer = () => {
   return (
