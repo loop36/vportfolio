@@ -4,6 +4,7 @@ import Unfonts from "unplugin-fonts/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/pages/dist/',
   server: {
     port: 4000,
   },

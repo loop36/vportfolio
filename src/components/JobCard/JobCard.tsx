@@ -1,13 +1,13 @@
 import { Card, CardContent, CardHeader } from "@mui/material";
 import "./JobCard.scss";
 
-const JobCard = ({ jobDetails }) => {
+const JobCard = ({ jobDetails }: any) => {
   return (
     <Card className="job_card_container">
       <CardHeader title={jobDetails.title} />
       <CardContent>
         <ul>
-          {jobDetails?.accomplishments.map((data, index) => {
+          {jobDetails?.accomplishments.map((data: string, index: any) => {
             if (index > 2) return;
             return <li>{data}</li>;
           })}
