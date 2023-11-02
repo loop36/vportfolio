@@ -19,7 +19,12 @@ import VTLogo from "../../assets/logo/logo2.png";
 import "./NavigationMenu.scss";
 
 const NavigationMenu = () => {
-  const navItems = ["Home", "What I Do", "Skills", "Connect With Me"];
+  const navItems = [
+    { name: "Home", id: "home" },
+    { name: "What I Do", id: "whatido" },
+    { name: "Skills", id: "skill" },
+    { name: "Connect With Me", id: "connect" },
+  ];
   const [mobileOpen, setMobileOpen] = useState(false);
   const handleDrawerToggle = () =>
     setMobileOpen((prevMobileOpen) => !prevMobileOpen);
@@ -31,9 +36,20 @@ const NavigationMenu = () => {
     >
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} sx={{ color: "black" }} />
+          <ListItem key={item.id} disablePadding>
+            <ListItemButton
+              sx={{ textAlign: "center" }}
+              onClick={() => {
+                let element = document.getElementById(item.id);
+                element &&
+                  element.scrollIntoView({
+                    behavior: "smooth",
+                    block: "end",
+                    inline: "nearest",
+                  });
+              }}
+            >
+              <ListItemText primary={item.name} sx={{ color: "black" }} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -61,8 +77,20 @@ const NavigationMenu = () => {
           </IconButton>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "black", fontWeight: "500" }}>
-                {item}
+              <Button
+                key={item.id}
+                sx={{ color: "black", fontWeight: "500" }}
+                onClick={() => {
+                  let element = document.getElementById(item.id);
+                  element &&
+                    element.scrollIntoView({
+                      behavior: "smooth",
+                      block: "end",
+                      inline: "nearest",
+                    });
+                }}
+              >
+                {item.name}
               </Button>
             ))}
           </Box>
