@@ -47,7 +47,7 @@ const NavigationMenu = () => {
       <AppBar
         component="nav"
         className="app_bar"
-        sx={{ backgroundColor: "transparent", boxShadow: "none" }}
+        sx={{ backgroundColor: "white", boxShadow: "none" }}
       >
         <Toolbar>
           <IconButton
@@ -67,7 +67,7 @@ const NavigationMenu = () => {
             ))}
           </Box>
           <Box sx={{ marginLeft: "auto" }}>
-            <img src={VTLogo} alt="VT Logo" width="64px" />
+            <img src={VTLogo} alt="VT Logo" className="icon_style" />
           </Box>
         </Toolbar>
       </AppBar>
@@ -83,7 +83,7 @@ const NavigationMenu = () => {
             display: { xs: "block", sm: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
-              width: "100vh",
+              width: "100vw",
             },
           }}
         >

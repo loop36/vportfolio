@@ -1,7 +1,6 @@
-
 import "./ProfilePicture.scss";
 import { Grid, Typography } from "@mui/material";
-import profile from "../../assets/vineetha.jpg";
+import profile from "../../assets/profile.jpg";
 
 const ProfilePictureContainer = () => {
   return (
@@ -10,6 +9,9 @@ const ProfilePictureContainer = () => {
         <Typography variant="h1" className="title_name">
           VINEETHA <br />
           THOMAS
+        </Typography>
+        <Typography variant="h1" className="title_name_mobile">
+          VINEETHA THOMAS
         </Typography>
         <div className="image_container">
           <img src={profile} alt="vineetha" />

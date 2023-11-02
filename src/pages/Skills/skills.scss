@@ -2,14 +2,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 4em;
   padding-bottom: 40px;
   gap: 20px;
+  padding-inline: 2em;
+  gap: 48px;
 }
 
 @media screen and (min-width: 72em) {
   .skill_chips_container {
     padding-top: 4em;
-    gap: 48px;
   }
 }

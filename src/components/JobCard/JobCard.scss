@@ -5,11 +5,11 @@
   padding-block: 20px;
   z-index: 2;
   margin-bottom: 10px;
+  
 }
 
 @media screen and (min-width: 72em) {
-    .job_card_container
-    {
-        max-width: 350px;
-    }
+  .job_card_container {
+    max-width: 350px;
+  }
 }

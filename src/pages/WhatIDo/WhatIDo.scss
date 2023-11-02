@@ -3,9 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 60px;
   padding-bottom: 40px;
   gap: 10px;
+  flex: 1;
   img {
     z-index: 2;
     display: none;
@@ -16,9 +17,13 @@
   .what_container {
     flex-direction: row;
     padding-top: 40px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    align-items: normal;
+
     img {
-        display: block;
-      }
+      display: block;
+      align-self: center;
+    }
   }
- 
 }
