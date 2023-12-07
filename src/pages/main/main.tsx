@@ -16,13 +16,7 @@ const Main = () => {
         <NavigationMenu />
         <Title />
       </div>
-      <div className="experience_container" id="whatido">
-        <h1>What I Do</h1>
-        <WhatIDo />
-        <div className="data">
-          <img src={Data} />
-        </div>
-      </div>
+
       <div className="skills_container" id="skill">
         <h1>Featured Works</h1>
         <FeaturedWork />

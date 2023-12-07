@@ -1,12 +1,11 @@
 import { Box, Card, CardMedia } from "@mui/material";
-import React from "react";
 import "./FeaturedWork.scss";
 import veiroot from "../../assets/veiroot.jpg";
 import tyndis from "../../assets/tyndis.jpg";
 
 const FeaturedWork = () => {
   return (
-    <Box display={"flex"} paddingY={"5em"} flexDirection={"column"} gap={"4em"}>
+    <Box display={"flex"} paddingY={"5em"} gap={"4em"}>
       <Card className="card">
         <CardMedia
           image={veiroot}
@@ -17,13 +16,13 @@ const FeaturedWork = () => {
         <div className="overlay">
           <h3>PAID MARKETING</h3> - Veiroots
           <p>
-            OBJECTIVE-:LEAD GENERATION FOR FREE WEBINAR ON EPILIMO GENETIC
+            OBJECTIVE: LEAD GENERATION FOR FREE WEBINAR ON EPILIMO GENETIC
             TESTING PROGRAM.
             <p>
-              TARGET AUDIENCE-:METRO CITIES IN
+              TARGET AUDIENCE: METRO CITIES IN
               INDIA-MUMBAI-BANGLORE,DELHI,HYDRABAD,KOCHIN
             </p>
-            <p>RESULT -EXCEEDED TARGET,INDICATED STRONG ENGAGEMENT</p>
+            <p>RESULT : EXCEEDED TARGET,INDICATED STRONG ENGAGEMENT</p>
           </p>
         </div>
       </Card>
@@ -37,7 +36,7 @@ const FeaturedWork = () => {
         <div className="overlay">
           <h3>BRAND TYNDIS </h3> - https://www.tyndistravel.com/
           <p>
-            OBJECTIVE-IMPROVE THE WEBSITE RANK ON SEARCH ENGINE (RANK WAS 100+)
+            OBJECTIVE : IMPROVE THE WEBSITE RANK ON SEARCH ENGINE (RANK WAS 100+)
           </p>
           <p>
             OPTIMISE THE WEBSITE TO MAKE IT USER FRIENDLY (MULTIDEVICE) INCREASE
