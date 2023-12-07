@@ -3,10 +3,10 @@ import ConnectWithMe from "../ConnectWithMe/ConnectWithMe";
 import Footer from "../Footer/Footer";
 import Skills from "../Skills/Skills";
 import Title from "../TitlePage/title";
-import WhatIDo from "../WhatIDo/WhatIDo";
+//import WhatIDo from "../WhatIDo/WhatIDo";
 import "./main.scss";
 
-import Data from "../../assets/data.jpg";
+// import Data from "../../assets/data.jpg";
 import FeaturedWork from "../FeaturedWorks/FeaturedWork";
 
 const Main = () => {

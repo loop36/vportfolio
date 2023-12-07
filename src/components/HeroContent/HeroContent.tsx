@@ -33,7 +33,7 @@ const HeroContent = () => {
             }}
             onClick={() => {
               window.open(
-                "https://drive.google.com/file/d/1Cw3H3oRyLBpTcjxQ1wQh_q9YHY5I1itO/view?usp=sharing",
+                "https://drive.google.com/file/d/100RYS5SODnm8_DW-XX9QxKJgpaxC5RON/view?usp=sharing",
                 "_blank",
                 "noreferrer"
               );
