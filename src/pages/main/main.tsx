@@ -7,6 +7,7 @@ import WhatIDo from "../WhatIDo/WhatIDo";
 import "./main.scss";
 
 import Data from "../../assets/data.jpg";
+import FeaturedWork from "../FeaturedWorks/FeaturedWork";
 
 const Main = () => {
   return (
@@ -21,6 +22,10 @@ const Main = () => {
         <div className="data">
           <img src={Data} />
         </div>
+      </div>
+      <div className="skills_container" id="skill">
+        <h1>Featured Works</h1>
+        <FeaturedWork />
       </div>
       <div className="skills_container" id="skill">
         <h1>Skills</h1>
