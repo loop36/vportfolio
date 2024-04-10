@@ -1,0 +1,14 @@
+:root {
+  --main-container-inline-padding: 8rem;
+  --main-container-block-padding: 4rem;
+}
+.content-container {
+  padding: 4rem 1rem;
+  
+}
+@media only screen and (min-width: 92em) {
+  .content-container {
+    padding: var(--main-container-block-padding)
+      var(--main-container-inline-padding);
+  }
+}

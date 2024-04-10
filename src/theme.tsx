@@ -10,6 +10,12 @@ export const theme = createTheme({
       fontWeight: 800,
       fontSize: 72,
     },
+    h3: {
+      fontFamily: "Encode Sans Semi Expanded",
+      fontWeight: 800,
+      fontSize: 72,
+    },
+    
   },
   palette: {
     primary: { main: "#2E6CB6" },

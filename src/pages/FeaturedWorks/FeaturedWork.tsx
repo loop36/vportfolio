@@ -1,32 +1,60 @@
-import { Box, Card, CardMedia } from "@mui/material";
+import { Box, Card, CardMedia, Grid } from "@mui/material";
 import "./FeaturedWork.scss";
-import veiroot from "../../assets/veiroot.jpg";
-import tyndis from "../../assets/tyndis.jpg";
+import veiroot from "../../assets/vieroots-home.jpg";
+import tyndis from "../../assets/tyndis-home.jpg";
+import FeatureCard from "../../components/FeatureCard/FeatureCard";
 
 const FeaturedWork = () => {
   return (
-    <Box display={"flex"} paddingY={"5em"} gap={"4em"}>
-      <Card className="card">
-        <CardMedia
-          image={veiroot}
-          component="img"
-          height="500"
-          className="media"
-        />
-        <div className="overlay">
-          <h3>PAID MARKETING</h3> - Veiroots
-          <p>
-            OBJECTIVE: LEAD GENERATION FOR FREE WEBINAR ON EPILIMO GENETIC
-            TESTING PROGRAM.
+    <Box
+      display={"flex"}
+      gap={"4em"}
+      justifyContent={"center"}
+      alignItems={"center"}
+    >
+      <Grid container spacing={2}>
+        <Grid item spacing={2} md={12}>
+          <FeatureCard img={tyndis}>
+            <h3>Tyndis </h3>
+            <a href="https://www.tyndistravel.com/" target="_blank">
+              - https://www.tyndistravel.com/
+            </a>
             <p>
-              TARGET AUDIENCE: METRO CITIES IN
-              INDIA-MUMBAI-BANGLORE,DELHI,HYDRABAD,KOCHIN
+              Objective : Improve the website rank on search engine (rank was
+              100+)
             </p>
-            <p>RESULT : EXCEEDED TARGET,INDICATED STRONG ENGAGEMENT</p>
-          </p>
-        </div>
-      </Card>
-      <Card className="card">
+            <p>
+              Optimise the website to make it user friendly (multidevice)
+              increase
+            </p>
+            <p>
+              The traffic campaign info worked on the overall planning and
+              strategy. Co ordinated with the developing team to fix the
+              technical issues on the website which were causing slow response
+              time created high quality backlinks to generate traffic to the
+              website results
+            </p>
+          </FeatureCard>
+        </Grid>
+        <Grid item spacing={2} md={12}>
+          <FeatureCard img={veiroot}>
+            <h3>Paid Marketing</h3>
+            <a href="https://vieroots.com/" target="_blank">
+              - Veiroots
+            </a>
+            <p>
+              OBJECTIVE: LEAD GENERATION FOR FREE WEBINAR ON EPILIMO GENETIC
+              TESTING PROGRAM.
+              <p>
+                TARGET AUDIENCE: METRO CITIES IN
+                INDIA-MUMBAI-BANGLORE,DELHI,HYDRABAD,KOCHIN
+              </p>
+              <p>RESULT : EXCEEDED TARGET,INDICATED STRONG ENGAGEMENT</p>
+            </p>
+          </FeatureCard>
+        </Grid>
+      </Grid>
+      {/* <Card className="card">
         <CardMedia
           image={tyndis}
           component="img"
@@ -34,21 +62,8 @@ const FeaturedWork = () => {
           className="media"
         />
         <div className="overlay">
-          <h3>BRAND TYNDIS </h3> - https://www.tyndistravel.com/
-          <p>
-            OBJECTIVE : IMPROVE THE WEBSITE RANK ON SEARCH ENGINE (RANK WAS 100+)
-          </p>
-          <p>
-            OPTIMISE THE WEBSITE TO MAKE IT USER FRIENDLY (MULTIDEVICE) INCREASE
-          </p>
-          <p>
-            THE TRAFFIC CAMPAIGN INFO WORKED ON THE OVERALL PLANNING AND
-            STRATEGY CO ORDINATED WITH THE DEVELOPING TEAM TO FIX THE TECHNICAL
-            ISSUES ON THE WEBSITE WHICH WERE CAUSING SLOW RESPONSE TIME CREATED
-            HIGH QUALITY BACKLINKS TO GENERATE TRAFFIC TO THE WEBSITE RESULTS
-          </p>
-        </div>
-      </Card>
+        
+      </Card> */}
     </Box>
   );
 };

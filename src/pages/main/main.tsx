@@ -11,24 +11,31 @@ import FeaturedWork from "../FeaturedWorks/FeaturedWork";
 
 const Main = () => {
   return (
-    <>
-      <div className="mainContainer" id="home">
-        <NavigationMenu />
-        <Title />
+    <div className="parent_container">
+      <NavigationMenu />
+      <div className="mainContainer">
+        <div className="content-container">
+          <Title />
+        </div>
+      </div>
+      <div className="feature_container" id="feature">
+        <div className="content-container">
+          <h1>Featured Works</h1>
+          <FeaturedWork />
+        </div>
+      </div>
+      <div className="skills_container" id="skill">
+        <div className="content-container">
+          <h1>Skills</h1>
+          <Skills />
+        </div>
+      </div>
+      <div className="content-container">
+        <ConnectWithMe />
       </div>
 
-      <div className="skills_container" id="skill">
-        <h1>Featured Works</h1>
-        <FeaturedWork />
-      </div>
-      <div className="skills_container" id="skill">
-        <h1>Skills</h1>
-        <Skills />
-      </div>
-
-      <ConnectWithMe />
       <Footer />
-    </>
+    </div>
   );
 };
 
