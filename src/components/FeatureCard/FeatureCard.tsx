@@ -1,5 +1,5 @@
 import { Card, CardContent, CardMedia } from "@mui/material";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import "./FeatureCard.scss";
 
 interface FeatureCardType {
@@ -8,12 +8,7 @@ interface FeatureCardType {
   content?: string;
   children?: ReactNode;
 }
-const FeatureCard = ({
-  img,
-  title,
-  contentchild,
-  children,
-}: FeatureCardType) => {
+const FeatureCard = ({ img, children }: FeatureCardType) => {
   return (
     <Card className="card">
       <CardMedia image={img} component="img" height="500" className="media" />

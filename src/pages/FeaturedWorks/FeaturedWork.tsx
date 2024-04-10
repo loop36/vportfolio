@@ -1,4 +1,4 @@
-import { Box, Card, CardMedia, Grid } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import "./FeaturedWork.scss";
 import veiroot from "../../assets/vieroots-home.jpg";
 import tyndis from "../../assets/tyndis-home.jpg";
@@ -19,21 +19,21 @@ const FeaturedWork = () => {
             <a href="https://www.tyndistravel.com/" target="_blank">
               - https://www.tyndistravel.com/
             </a>
-            <p>
+            <Typography paragraph maxWidth={760}>
               Objective : Improve the website rank on search engine (rank was
               100+)
-            </p>
-            <p>
+            </Typography>
+            <Typography>
               Optimise the website to make it user friendly (multidevice)
               increase
-            </p>
-            <p>
+            </Typography>
+            <Typography maxWidth={760}>
               The traffic campaign info worked on the overall planning and
               strategy. Co ordinated with the developing team to fix the
               technical issues on the website which were causing slow response
               time created high quality backlinks to generate traffic to the
               website results
-            </p>
+            </Typography>
           </FeatureCard>
         </Grid>
         <Grid item spacing={2} md={12}>
@@ -54,16 +54,6 @@ const FeaturedWork = () => {
           </FeatureCard>
         </Grid>
       </Grid>
-      {/* <Card className="card">
-        <CardMedia
-          image={tyndis}
-          component="img"
-          height="500"
-          className="media"
-        />
-        <div className="overlay">
-        
-      </Card> */}
     </Box>
   );
 };

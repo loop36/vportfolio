@@ -24,7 +24,7 @@
   h1 {
     position: absolute;
     margin-top: -6rem;
-    font-size: 60px;
+    font-size: clamp(2rem, 1rem + 4vw, 4rem);
   }
 }
 .skills_container {
@@ -35,7 +35,7 @@
   h1 {
     position: absolute;
     margin-top: -6rem;
-    font-size: 60px;
+    font-size: clamp(2rem, 1rem + 4vw, 4rem);
   }
 }
 .experience_container .data {
@@ -68,7 +68,6 @@
     h1 {
       position: absolute;
       margin-top: -6rem;
-      font-size: 60px;
     }
   }
   .experience_container {

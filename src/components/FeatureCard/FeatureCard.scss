@@ -18,15 +18,26 @@
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
   padding: 4em;
+  p {
+    font-size: 14px;
+  }
   a {
     text-decoration: none;
     color: white;
     color: greenyellow;
     &:hover {
       color: green;
+    }
+  }
+}
+@media screen and (min-width: 92em) {
+  .overlay {
+    p {
+      font-size: 20px;
+      max-width: 760px;
     }
   }
 }
