@@ -40,16 +40,16 @@ const FeaturedWork = () => {
           <FeatureCard img={veiroot}>
             <h3>Paid Marketing</h3>
             <a href="https://vieroots.com/" target="_blank">
-              - Veiroots
+              - Vieroots
             </a>
             <p>
-              OBJECTIVE: LEAD GENERATION FOR FREE WEBINAR ON EPILIMO GENETIC
-              TESTING PROGRAM.
+              Objective: Lead generation for free webinar on EPLIMO GENETIC
+              TESTING program.
               <p>
-                TARGET AUDIENCE: METRO CITIES IN
-                INDIA-MUMBAI-BANGLORE,DELHI,HYDRABAD,KOCHIN
+                Target Audience : Metro cities in
+                India - Mumbai, Bengaluru,Delhi,Hyderabad,Cochin
               </p>
-              <p>RESULT : EXCEEDED TARGET,INDICATED STRONG ENGAGEMENT</p>
+              <p>Result : Exceeded targed,indicated strong engagement</p>
             </p>
           </FeatureCard>
         </Grid>
