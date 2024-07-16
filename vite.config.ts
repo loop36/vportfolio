@@ -16,7 +16,11 @@ export default defineConfig({
           {
             name: "Nunito Sans",
             defer: true,
-          },
+          }
+          ,{
+            name:"Apercu",
+            defer: true,
+          }
         ],
       },
     }),
