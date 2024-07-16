@@ -1,6 +1,7 @@
 
 import SkillChips from "../../components/SkillChips/SkillChips";
 import { Box } from "@mui/material";
+import './skills.scss'
 
 const Skills = () => {
   // Data and Analysis
@@ -92,7 +93,7 @@ const Skills = () => {
   // Export the arrays for use in other JavaScript files
 
   return (
-    <Box>
+    <Box className="skill_chips_container">
       <SkillChips
         title="Marketing and Advertising"
         data={marketingAndAdvertisingSkills}

@@ -2,7 +2,7 @@
 import Main from "./pages/main/main";
 
 //static or style imports
-import "./App.css";
+import "./App.scss";
 import { ThemeProvider } from "@mui/material";
 import { theme } from "./theme";
 

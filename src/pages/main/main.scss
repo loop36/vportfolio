@@ -6,14 +6,95 @@
   overflow: visible;
   min-height: 100vh;
 }
-@media only screen and (min-width: 564px) {
+.experience_container {
+  position: relative;
+  width: auto;
+  background-color: #f2f2f2;
+  h1 {
+    position: absolute;
+    margin-top: -80px;
+
+    font-size: 60px;
+  }
+}
+.feature_container {
+  position: relative;
+  width: auto;
+  background-color: #f2f2f2;
+  h1 {
+    position: absolute;
+    margin-top: -6rem;
+    font-size: clamp(2rem, 1rem + 4vw, 4rem);
+  }
+}
+.skills_container {
+  position: relative;
+  width: auto;
+  background-color: #e5eeec;
+
+  h1 {
+    position: absolute;
+    margin-top: -6rem;
+    font-size: clamp(2rem, 1rem + 4vw, 4rem);
+  }
+}
+.experience_container .data {
+  position: absolute;
+  bottom: -10px;
+  img {
+    min-width: 300px;
+    max-width: 440px;
+  }
+}
+.skills_container .data {
+  position: absolute;
+  bottom: -10px;
+}
+
+@media only screen and (min-width: 92em) {
   .mainContainer {
     box-sizing: border-box;
-    padding: 0 8em;
+
     background-image: url("../../assets/bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: visible;
     min-height: 100vh;
+  }
+  .feature_container {
+    position: relative;
+    width: auto;
+    background-color: #f2f2f2;
+    h1 {
+      position: absolute;
+      margin-top: -6rem;
+    }
+  }
+  .experience_container {
+    background-color: #f2f2f2;
+    margin-top: 80px;
+    h1 {
+      position: absolute;
+
+      font-size: 60px;
+    }
+  }
+
+  .experience_container .data {
+    position: absolute;
+    bottom: -10px;
+    img {
+      min-width: 300px;
+      max-width: 440px;
+    }
+  }
+
+  .skills_container {
+    background-color: #e5eeec;
+    h1 {
+      position: absolute;
+      font-size: 60px;
+      margin-top: -6rem;
+    }
   }
 }

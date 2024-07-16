@@ -1,0 +1,43 @@
+.card {
+  position: relative;
+  min-width: 300;
+  margin: 2em;
+  //max-width: 800px;
+}
+.media {
+  height: 200;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 4em;
+  p {
+    font-size: 14px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    color: greenyellow;
+    &:hover {
+      color: green;
+    }
+  }
+}
+@media screen and (min-width: 92em) {
+  .overlay {
+    p {
+      font-size: 20px;
+      max-width: 760px;
+    }
+  }
+}

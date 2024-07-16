@@ -12,14 +12,19 @@ import {
   Toolbar,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import  { useState } from "react";
+import { useState } from "react";
 
-import VTLogo from "../../assets/logo/vt.svg";
+import VTLogo from "../../assets/logo/logo2.png";
 
 import "./NavigationMenu.scss";
 
 const NavigationMenu = () => {
-  const navItems = ["Home", "What I Do", "Skills", "Connect With Me"];
+  const navItems = [
+    { name: "Home", id: "home" },
+    { name: "What I Do", id: "whatido" },
+    { name: "Skills", id: "skill" },
+    { name: "Connect With Me", id: "connect" },
+  ];
   const [mobileOpen, setMobileOpen] = useState(false);
   const handleDrawerToggle = () =>
     setMobileOpen((prevMobileOpen) => !prevMobileOpen);
@@ -31,9 +36,20 @@ const NavigationMenu = () => {
     >
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} sx={{ color: "black" }} />
+          <ListItem key={item.id} disablePadding>
+            <ListItemButton
+              sx={{ textAlign: "center" }}
+              onClick={() => {
+                let element = document.getElementById(item.id);
+                element &&
+                  element.scrollIntoView({
+                    behavior: "smooth",
+                    block: "end",
+                    inline: "nearest",
+                  });
+              }}
+            >
+              <ListItemText primary={item.name} sx={{ color: "black" }} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -47,7 +63,7 @@ const NavigationMenu = () => {
       <AppBar
         component="nav"
         className="app_bar"
-        sx={{ backgroundColor: "transparent", boxShadow: "none" }}
+        sx={{ backgroundColor: "white", boxShadow: "none" }}
       >
         <Toolbar>
           <IconButton
@@ -61,13 +77,25 @@ const NavigationMenu = () => {
           </IconButton>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "black", fontWeight: "500" }}>
-                {item}
+              <Button
+                key={item.id}
+                sx={{ color: "black", fontWeight: "500" }}
+                onClick={() => {
+                  let element = document.getElementById(item.id);
+                  element &&
+                    element.scrollIntoView({
+                      behavior: "smooth",
+                      block: "end",
+                      inline: "nearest",
+                    });
+                }}
+              >
+                {item.name}
               </Button>
             ))}
           </Box>
           <Box sx={{ marginLeft: "auto" }}>
-            <img src={VTLogo} alt="VT Logo" width="64px" />
+            <img src={VTLogo} alt="VT Logo" className="icon_style" />
           </Box>
         </Toolbar>
       </AppBar>
@@ -83,7 +111,7 @@ const NavigationMenu = () => {
             display: { xs: "block", sm: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
-              width: "100vh",
+              width: "100vw",
             },
           }}
         >

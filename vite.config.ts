@@ -4,6 +4,7 @@ import Unfonts from "unplugin-fonts/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: 'https://loop36.github.io/vportfolio/',
   server: {
     port: 4000,
   },
@@ -15,7 +16,11 @@ export default defineConfig({
           {
             name: "Nunito Sans",
             defer: true,
-          },
+          }
+          ,{
+            name:"Apercu",
+            defer: true,
+          }
         ],
       },
     }),

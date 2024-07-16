@@ -4,15 +4,19 @@
   background-color: transparent;
   color: $secondaryColor;
 }
+.icon_style {
+  max-width: 40px;
+}
 
 nav {
-  padding: 12px 6em;
-  max-width: 1800px;
+  padding: 0px 2em;
+  max-width: 1920px;
   left: 50% !important;
   transform: translateX(-50%);
 }
 @media only screen and (max-width: 768px) {
   nav {
     padding: 0;
+    background-color: white;
   }
 }
