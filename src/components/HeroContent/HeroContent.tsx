@@ -33,7 +33,7 @@ const HeroContent = () => {
             }}
             onClick={() => {
               window.open(
-                "https://drive.google.com/file/d/100RYS5SODnm8_DW-XX9QxKJgpaxC5RON/view?usp=sharing",
+                "https://drive.google.com/file/d/1Q1EaTRqWx9GASK5r7yt4i6tt_SL15t5g/view?usp=sharing",
                 "_blank",
                 "noreferrer"
               );
@@ -53,7 +53,7 @@ const HeroContent = () => {
             }}
             onClick={() => {
               let element = document.getElementById("connect");
-              element && element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+              element && element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
             }}
           >
             Connect With Me
